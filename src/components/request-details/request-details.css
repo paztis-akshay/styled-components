@@ -1,0 +1,37 @@
+.request-details {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.section {
+    display: grid;
+    padding-right: 20px;
+    padding-left: 10px;
+    border-left: 1px solid #767676;
+}
+
+#full-details {
+    font-size: 12px;
+    position: absolute;
+    padding-left: 95%;
+    float: right;
+    top: 120px;
+}
+
+.full-details-link {
+    color: black;
+}
+#full-details::after {
+    content: "^";
+    display:inline-block;
+}
+
+span.light-head {
+    font-size: 12px;
+    color: #767676;
+}
+
+span.black-head {
+    font-size: 12px;
+    color: rgb(24, 17, 17);
+}

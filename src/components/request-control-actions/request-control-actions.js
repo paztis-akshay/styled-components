@@ -1,17 +1,17 @@
 import React from 'react';
-import './request-control-actions.css';
+import {Icon, Reject, RequestControlActions, RequestControls, Authorise, Actions, IconExtended} from '../../style-components/request-control-actions-style';
 
-export const RequestControlActions = (props) => {
+export const RequestControlActionsComponent = (props) => {
     return (
-        <div className="request-controls-actions">
-            <div className = "request-controls">
-                <span className="icon1">icon1</span>
-                <span className="icon2">icon2</span>
-            </div>
-            <div className="actions">
-                <button className="reject">Reject</button>
-                <button className="authorise">Authorise</button>
-            </div>
-        </div>
+        <RequestControlActions>
+            <RequestControls>
+                <Icon>icon1</Icon>
+                <IconExtended>icon2</IconExtended>
+            </RequestControls>
+            <Actions>
+                <Reject>Reject</Reject>
+                <Authorise>Authorise</Authorise>
+            </Actions>
+        </RequestControlActions>
     )
 }

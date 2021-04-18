@@ -1,11 +1,11 @@
 import React from 'react';
-import './title.css';
+import {Title, RequestType, Amount} from '../../style-components/title-style';
 
-export const Title = (props) => {
+export const TitleComponent = (props) => {
     return (
-        <div className="title">
-            <span className="request-type">Cancel/recall payment, GBP </span>
-            <span className="amount">1000.00</span>
-        </div>
+        <Title>
+            <RequestType>Cancel/recall payment, GBP </RequestType>
+            <Amount>1000.00</Amount>
+        </Title>
     )
 }

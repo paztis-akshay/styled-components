@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './card.css';
-import {Title} from './title/Title';
-import {MiddleSection} from './middle-section/MiddleSection';
-import {RequestControlActions} from './request-control-actions/request-control-actions';
-import {RequestDetails} from './request-details/RequestDetails';
+import {Card} from '../style-components/card-style';
+import {TitleComponent} from './title/Title';
+import {MiddleSectionComponent} from './middle-section/MiddleSection';
+import {RequestControlActionsComponent} from './request-control-actions/request-control-actions';
+import {RequestDetailsComponent} from './request-details/RequestDetails';
 
 export default class CardComponent extends Component {
     constructor(props) {
@@ -15,12 +15,12 @@ export default class CardComponent extends Component {
 
     render() {
         return (
-            <div className="card">
-                <Title></Title>
-                <MiddleSection></MiddleSection>
-                <RequestControlActions></RequestControlActions>
-                <RequestDetails></RequestDetails>
-            </div>
+            <Card>
+                <TitleComponent></TitleComponent>
+                <MiddleSectionComponent></MiddleSectionComponent>
+                <RequestControlActionsComponent></RequestControlActionsComponent>
+                <RequestDetailsComponent></RequestDetailsComponent>
+            </Card>
         );
     }
 }

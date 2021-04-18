@@ -1,26 +1,26 @@
 import React from 'react';
-import './request-details.css';
+import {RequestDetails, Section, LightHead, BlackHead, FullDetails, FullDetailsLink} from '../../style-components/request-details-style';
 
-export const RequestDetails = () => {
+export const RequestDetailsComponent = () => {
     return (
         <>
-            <div id="full-details">
-                <a className="full-details-link" href="/submit.aspx">Full Details</a>
-            </div>
-            <div className="request-details">
-                <div className="section">
-                    <span className="light-head">Request Reference</span>
-                    <span className="black-head">SET29383ABCH</span>
-                </div>
-                <div className="section">
-                    <span className="light-head">Category</span>
-                    <span className="black-head">Customer Services</span>
-                </div>
-                <div className="section">
-                    <span className="light-head">Request Status</span>
-                    <span className="black-head">Pending Authorisation</span>
-                </div>
-            </div>
+            <FullDetails>
+                <FullDetailsLink href="/#">Full Details</FullDetailsLink>
+            </FullDetails>
+            <RequestDetails>
+                <Section>
+                    <LightHead>Request Reference</LightHead>
+                    <BlackHead>SET29383ABCH</BlackHead>
+                </Section>
+                <Section>
+                    <LightHead>Category</LightHead>
+                    <BlackHead>Customer Services</BlackHead>
+                </Section>
+                <Section>
+                    <LightHead>Request Status</LightHead>
+                    <BlackHead>Pending Authorisation</BlackHead>
+                </Section>
+            </RequestDetails>
         </>
     )
 }

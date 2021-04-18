@@ -1,12 +1,12 @@
 import React from 'react';
-import './middle-section.css';
+import {MiddleSection, AccountNumber, Location, AccountName} from '../../style-components/middle-section-style';
 
-export const MiddleSection = () => {
+export const MiddleSectionComponent = () => {
     return (
-        <div className="middle-section">
-            <span className="account-number">1234567890123456</span>
-            <span className="location"> (CB), </span>
-            <span className="account-name">KUIML Business Company</span>
-        </div>
+        <MiddleSection>
+            <AccountNumber>1234567890123456</AccountNumber>
+            <Location> (CB), </Location>
+            <AccountName>KUIML Business Company</AccountName>
+        </MiddleSection>
     )
 }

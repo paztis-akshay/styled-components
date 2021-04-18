@@ -1,20 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {Card} from '../style-components/card-style';
 import {TitleComponent} from './title/Title';
 import {MiddleSectionComponent} from './middle-section/MiddleSection';
 import {RequestControlActionsComponent} from './request-control-actions/request-control-actions';
 import {RequestDetailsComponent} from './request-details/RequestDetails';
 
-export default class CardComponent extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {};
-    }
-
-    componentDidMount() {}
-
-    render() {
-        return (
+export const CardComponent = () => {
+    return (
             <Card>
                 <TitleComponent></TitleComponent>
                 <MiddleSectionComponent></MiddleSectionComponent>
@@ -22,5 +14,4 @@ export default class CardComponent extends Component {
                 <RequestDetailsComponent></RequestDetailsComponent>
             </Card>
         );
-    }
 }
